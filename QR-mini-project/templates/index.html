@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+    <link rel="stylesheet" href="fix.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate QR Code</title>
+</head>
+<body>
+    <div class="title">
+        <h1>QR code generator &#128293 </h1>
+        <h2>Insert a link below to generate a QR code</h2>
+    </div>
+    <form action="/" method="POST">
+        <input type="text" name="link">
+        <button type="submit">Generate QR</button>
+    </form>
+
+    <div class="generated">
+        <img src="{{data}}" alt="">
+        <p>Here is your generated QR Code</p>
+    </div>
+</body>
+</html>
